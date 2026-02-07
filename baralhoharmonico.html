@@ -1,0 +1,65 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/stylebaralho1.css">
+    <link rel="stylesheet" href="./styles/font_acordes.css">
+    <title>Harmonica - Baralho de Acordes</title>
+    </head>
+
+    <body>
+    <img src="./styles/img/logo.png" alt="Logo Harmonica" class="logo-flutuante">
+
+    <div class="main-content-wrapper">
+        <main class="caderno-container">
+        <div class="button-container">
+            <a id="select">BARALHO DE ACORDES</a>
+
+            <a href="#" class="level-btn active" data-level="1">NIVEL 1</a>
+            <a href="#" class="level-btn" data-level="2">NIVEL 2</a>
+            <a href="#" class="level-btn" data-level="3">NIVEL 3</a>
+            <a href="index.html">VOLTAR</a>
+        </div>
+            <a href="#" id="infoNiveis" class="game-help">como funciona os níveis do baralho</a>
+        </main>
+
+        <div class="container-conteudo">
+        <div>
+            <button id="mostrarNotasBtn" class="button-random">Sortear Acorde</button>
+        </div>
+
+        <div class="container-cards">
+            <div id="musicCard" class="music-card is-empty">
+            <span class="mini top" id="noteTop"></span>
+            <span class="big" id="noteMain"></span>
+            <span class="mini bottom" id="noteBottom"></span>
+
+            <span class="watermark right">HARMÔNICA</span>
+            <span class="watermark left">HARMÔNICA</span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal de ajuda -->
+    <div id="modalNiveis" class="modal-overlay">
+        <div class="modal-caderno">
+        <h2>Níveis do Baralho de Acordes</h2>
+
+        <p>
+            <strong>(NÍVEL 1)</strong> Acordes maiores e menores e diminutos <strong>(ex: C, Cm, Cº)</strong>.<br><br>
+            <strong>(NÍVEL 2)</strong> Acordes com 7º <strong>(ex: CM7, Cm7, C7)</strong>.<br><br>
+            <strong>(NÍVEL 3)</strong> Acordes invertidos <strong>(ex: C/E, Cm/Eb, E/G#)</strong>.<br><br>
+            <em>Explore, estude e pratique de forma simples e divertida!</em>
+        </p>
+
+        <div class="modal-actions">
+            <button id="fecharModal" class="button-random">Fechar</button>
+        </div>
+        </div>
+    </div>
+    <script src="./scripts/guard.js"></script>
+    <script src="./scripts/app_acordes.js"></script>
+    </body>
+    </html>

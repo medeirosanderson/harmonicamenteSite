@@ -1,0 +1,128 @@
+/*FONTE*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+/*RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Altere a font-family para 'sans-serif' ou inclua o link para 'DM Sans' */
+    font-family: "DM Sans" sans-serif; 
+    text-decoration: none;
+}
+
+body {
+    /* O Body agora será um container de coluna para centralizar o wrapper */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./img/HOME.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Novo container para alinhar o caderno e o texto lado a lado */
+.main-content-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; /* Centraliza a seção no body */
+    align-items: center;
+    gap: 240px; /* Espaço entre o caderno e o texto */
+    padding: 20px;
+    max-width: 1200px; /* Limita a largura total */
+    width: 100%;
+}
+
+.logo-flutuante {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 140px; /* Tamanho do logo */
+}
+
+.caderno-container {
+    /* Define o tamanho do caderno */
+    width: 100%;
+    max-width: 450px; /* Largura máxima do caderno */
+    min-height: 550px; 
+    
+    /* A IMAGEM DO CADERNO */
+    background-image: url('./img/blocodenotas.png');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    flex-shrink: 0; /* Impede o encolhimento do caderno */
+
+    /* Centraliza os botões dentro do caderno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Ajuste o padding para posicionar os botões corretamente dentro da imagem */
+    padding: 100px 50px 40px 50px; 
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+}
+
+.button-container a {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+
+    background-color:#e7caa4 ; 
+    color: #3f2e12; 
+    border: 2px solid #050505; 
+    padding: 20px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px #3f2e12; 
+    transition: all 0.1s;
+    text-align: center;
+}
+#select{
+    background-color: #3f2e12;
+    color: #e7caa4;
+}
+
+#select:hover {
+    transform: translateY(0); 
+    box-shadow: 0 6px 12px #050505; 
+    background-color: #3f2e12;
+    color: #e7caa4;
+}
+
+.button-container a:not(select):hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 12px #050505; 
+    background-color: #947645;
+    color: #3f2e12;
+}
+
+.button-container a:active {
+    transform: translateY(0); 
+    box-shadow: 0 2px 4px #947645; 
+}
+
+.texto-container {
+    /* Container para o texto */
+    width: 100%;
+    max-width: 850px; /* Limita a largura do texto para parecer uma coluna */
+    color: #050505; /* Cor do texto */
+}
+
+.texto-container p {
+    font-size: 1.2em;
+    line-height: 1.6; /* Melhora a leitura */
+    text-align: left;
+}
