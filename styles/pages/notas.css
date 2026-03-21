@@ -1,0 +1,15 @@
+    .music-card .big {
+    font-size: 92px;
+    }
+
+    .music-card .mini {
+    font-size: 20px;
+    }
+
+    .music-card.alterada .big {
+    font-size: 70px;
+    }
+
+    .music-card.alterada .mini {
+    font-size: 17px;
+    }

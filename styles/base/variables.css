@@ -1,0 +1,20 @@
+:root {
+    --color-primary: #3f2e12;
+    --color-secondary: #e7caa4;
+    --color-hover: #947645;
+    --color-dark: #050505;
+    --color-modal: #d1bd8e;
+    --color-error: #7A3E2D;
+
+    --shadow-soft: 0 4px 6px var(--color-primary);
+    --shadow-strong: 0 6px 12px var(--color-dark);
+    --shadow-card: 0 14px 22px rgba(0,0,0,.20);
+    --shadow-modal: 0 20px 40px rgba(0,0,0,.4);
+    --shadow-login: 0 18px 40px rgba(0,0,0,.35);
+
+    --radius-button: 25px;
+    --radius-card: 17px;
+    --radius-inner-card: 12px;
+    --radius-modal: 20px;
+    --radius-login: 22px;
+}

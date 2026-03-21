@@ -1,0 +1,101 @@
+    .music-card {
+    --card-color: var(--color-primary);
+    width: 220px;
+    height: 320px;
+    border-radius: var(--radius-card);
+    position: relative;
+    background: var(--card-color);
+    box-shadow: var(--shadow-card);
+    outline: 2px solid rgba(0, 0, 0, 0.25);
+    outline-offset: -2px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    }
+
+    .music-card::before {
+    content: "";
+    position: absolute;
+    inset: 14px;
+    border-radius: var(--radius-inner-card);
+    border: 2px solid rgba(0, 0, 0, 0.18);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.10) inset;
+    }
+
+    .music-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(120px 220px at 20% 15%, rgba(255, 255, 255, 0.10), transparent 60%),
+        radial-gradient(200px 260px at 70% 80%, rgba(0, 0, 0, 0.18), transparent 60%);
+    pointer-events: none;
+    }
+
+    .music-card .big {
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.85);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.10);
+    z-index: 2;
+    transition: opacity 0.12s ease;
+    }
+
+    .music-card .mini {
+    position: absolute;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+    transition: opacity 0.12s ease;
+    }
+
+    .music-card .mini.top {
+    top: 16px;
+    left: 24px;
+    }
+
+    .music-card .mini.bottom {
+    bottom: 16px;
+    right: 24px;
+    }
+
+    .music-card .watermark {
+    position: absolute;
+    font-size: 8px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: rgba(224, 217, 217, 0.316);
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+    }
+
+    .music-card .watermark.right {
+    right: -8px;
+    top: 23%;
+    transform: translateY(-50%) rotate(90deg);
+    }
+
+    .music-card .watermark.left {
+    left: -8px;
+    top: 77%;
+    transform: translateY(-50%) rotate(-90deg);
+    }
+
+    .music-card.pop {
+    animation: pop 0.18s ease-out;
+    }
+
+    @keyframes pop {
+    from {
+        transform: scale(0.98);
+    }
+
+    to {
+        transform: scale(1);
+    }
+    }
+
+    .music-card.is-empty .big,
+    .music-card.is-empty .mini {
+    opacity: 0;
+    }

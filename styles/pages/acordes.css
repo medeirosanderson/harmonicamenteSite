@@ -1,0 +1,32 @@
+    .music-card .big {
+    font-size: 62px;
+    }
+
+    .music-card .mini {
+    font-size: 20px;
+    }
+
+    .music-card.alterada .big {
+    font-size: 70px;
+    }
+
+    .music-card.alterada .mini {
+    font-size: 17px;
+    }
+
+    .music-card.compact .big {
+    font-size: 45px;
+    }
+
+    .music-card.compact .mini {
+    font-size: 17px;
+    }
+
+    .music-card.compact2 .big {
+    font-size: 45px;
+    letter-spacing: -1px;
+    }
+
+    .music-card.compact2 .mini {
+    font-size: 14px;
+    }

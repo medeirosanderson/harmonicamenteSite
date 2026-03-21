@@ -1,0 +1,60 @@
+    .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    }
+
+    .button-container a,
+    .button-random {
+    width: 100%;
+    max-width: 300px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: 2px solid var(--color-dark);
+    padding: 18px 20px;
+    font-size: 1.05em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: var(--radius-button);
+    box-shadow: var(--shadow-soft);
+    transition: all 0.15s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #select,
+    .level-btn.active {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    box-shadow: var(--shadow-strong);
+    }
+
+    #select:hover,
+    .button-random:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    box-shadow: var(--shadow-strong);
+    }
+
+    .button-container a:not(#select):hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-strong);
+    background-color: var(--color-hover);
+    color: var(--color-primary);
+    }
+
+    .button-container a:active,
+    .button-random:active {
+    transform: translateY(0);
+    }
+
+    .game-help {
+    font-size: 15px;
+    color: var(--color-primary);
+    text-decoration: underline;
+    }
