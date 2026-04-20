@@ -1,50 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/base/reset.css">
     <link rel="stylesheet" href="styles/base/typography.css">
     <link rel="stylesheet" href="styles/base/variables.css">
     <link rel="stylesheet" href="styles/components/buttons.css">
     <link rel="stylesheet" href="styles/pages/home.css">
     <title>Harmonicamente</title>
-</head>
-<body>
-        <img src="./styles/img/logo.png" alt="Logo Harmonica" class="logo-flutuante">
-        <nav class="nav-container">
-            <a href="index.html">HOME</a>
-            <a href="baralho.html">BARALHO MUSICAL</a>
-            <a href="#">ESCALAS</a>
-            <a href="#">SOBRE</a>
-        </nav>
+    </head>
+    <body>
+    <img src="./styles/img/logo.png" alt="Logo Harmônica" class="logo-flutuante">
+
+    <nav class="nav-container">
+        <a href="index.html"><i class="bi bi-house"> Home</i></a>
+        <a href="baralho.html"><i class="bi bi-suit-spade"> Baralho Musical</i></a>
+        <a href="#"><i class="bi bi-music-note"> Escalas</i></a>
+        <a href="#"><i class="bi bi-info-circle"> Sobre</i></a>
+    </nav>
+
+    <main class="home-wrapper">
         <div class="container-conteudo">
-            <main class="conteudo-inicial"> 
-                <h1>Bem-vindo ao Harmônica!</h1>
-                <p>
-                    O Harmônica é um projeto dedicado a tornar o aprendizado musical mais acessível, divertido e interativo. 
-                    Com uma variedade de recursos, jogos e ferramentas, nosso objetivo é ajudar músicos de todos os níveis a aprimorar suas habilidades 
-                    e explorar o mundo da música de maneira envolvente.
-                </p>
-                <p>
-                    Explore nossos baralhos musicais, pratique escalas, descubra acordes e muito mais. 
-                    Seja você um iniciante curioso ou um músico experiente, o Harmônica tem algo para todos. 
-                    Junte-se a nós nessa jornada musical e vamos aprender juntos!
-                </p>
-            </main>
-        <div class="painel-rigth">
-            <div class="container-dicasMusicais">
-                <h2>Dicas Musicais</h2>
-                    <ul id="dicasList">
-                            <!-- As dicas serão inseridas aqui pelo JavaScript -->
-                    </ul>
+        <section class="hero-home">
+            <div class="conteudo-inicial">
+            <h1>Bem-vindo ao Harmônica!</h1>
+            <p class="subtitulo-home">
+                Aprenda música de forma prática com baralhos, escalas e desafios interativos.
+            </p>
             </div>
-            <div class="container-acessoRapido"> 
-                <h2>Acesso Rápido</h2>
-                    <ul id="acessoRapidoList">
-                            <!-- O acesso rápido será inserido aqui pelo JavaScript -->
-                    </ul>
-            </div>
+        </section>
+
+        <section class="painel-inferior">
+            <article class="card-home">
+            <h2>Dica Musical</h2>
+            <p>
+                Aqui ficará uma dica musical dinâmica. Depois vamos conectar essa área com a lógica em JavaScript para alternar o conteúdo automaticamente.
+            </p>
+            </article>
+
+            <article class="card-home">
+            <h2>Continue de onde parou</h2>
+            <p>
+                Aqui aparecerá a última página acessada pelo usuário para facilitar o retorno ao conteúdo.
+            </p>
+            <a href="#" class="card-link">Ir para última página</a>
+            </article>
+        </section>
         </div>
-</body>
-</html>
+    </main>
+    </body>
+    </html>

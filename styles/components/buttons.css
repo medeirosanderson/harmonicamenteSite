@@ -27,6 +27,10 @@
     align-items: center;
     }
 
+    .button-random i {
+    font-size: 1.3em;
+    }
+
     #select,
     .level-btn.active {
     background-color: var(--color-primary);
