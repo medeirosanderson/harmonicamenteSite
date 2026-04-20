@@ -1,34 +1,51 @@
-🎵 Harmonicamente
+# 🎵 Harmonicamente
+
 Projeto web interativo focado no aprendizado musical através de prática
 e visualização, utilizando baralhos musicais para treinar reconhecimento
 de notas e acordes.
----
-🚀 Sobre o projeto
-O Harmonicamente foi criado com o objetivo de tornar o estudo de
-música mais prático, visual e dinâmico.
+
+------------------------------------------------------------------------
+
+## 🚀 Sobre o projeto
+
+O **Harmonicamente** foi criado com o objetivo de tornar o estudo de
+música mais **prático, visual e dinâmico**.
+
 A aplicação permite que o usuário:
-Treine notas musicais
-Treine acordes
-Pratique em diferentes níveis de dificuldade
-Use um sistema visual baseado em cartas musicais
----
-🧠 Conceito
-A ideia principal é simular um baralho musical, onde cada carta
+
+-   Treine **notas musicais**
+-   Treine **acordes**
+-   Pratique em diferentes níveis de dificuldade
+-   Use um sistema visual baseado em **cartas musicais**
+
+------------------------------------------------------------------------
+
+## 🧠 Conceito
+
+A ideia principal é simular um **baralho musical**, onde cada carta
 representa um elemento da teoria musical.
+
 O usuário pode:
-Gerar cartas aleatórias
-Identificar notas/acordes
-Evoluir por níveis:
-Iniciante
-Intermediário
-Avançado
----
-🛠️ Tecnologias utilizadas
-HTML5
-CSS3 (modularizado)
-JavaScript (Vanilla)
----
-📁 Estrutura do projeto
+
+-   Gerar cartas aleatórias
+-   Identificar notas/acordes
+-   Evoluir por níveis:
+    -   Iniciante
+    -   Intermediário
+    -   Avançado
+
+------------------------------------------------------------------------
+
+## 🛠️ Tecnologias utilizadas
+
+-   HTML5
+-   CSS3 (modularizado)
+-   JavaScript (Vanilla)
+
+------------------------------------------------------------------------
+
+## 📁 Estrutura do projeto
+
     harmonicamenteSite/
     │
     ├── index.html
@@ -65,54 +82,86 @@ JavaScript (Vanilla)
     │   └── img/
     │       └── (imagens do projeto)
 
----
-🎯 Arquitetura CSS
+------------------------------------------------------------------------
+
+## 🎯 Arquitetura CSS
+
 O projeto segue uma divisão modular:
-Base
+
+### Base
+
 Arquivos globais: - reset - tipografia - variáveis
-Layout
+
+### Layout
+
 Responsável pela estrutura compartilhada: - fundo - containers
 principais - organização geral
+
 Arquivo: `styles/layout/app-shell.css`
-Components
+
+### Components
+
 Componentes reutilizáveis: - Botões - Cartas - Modal - Login
-Pages
+
+### Pages
+
 Estilos específicos por página: - home.css - baralho.css - notas.css -
 acordes.css
----
-⚠️ Padrões importantes
-Separação de responsabilidades
-Layout global NÃO deve ficar em pages
-Pages NÃO devem repetir estrutura
-Uso de modificadores
+
+------------------------------------------------------------------------
+
+## ⚠️ Padrões importantes
+
+### Separação de responsabilidades
+
+-   Layout global NÃO deve ficar em pages
+-   Pages NÃO devem repetir estrutura
+
+### Uso de modificadores
+
     .bloco
     .bloco--modificador
 
 Exemplo:
+
     .main-content-wrapper
     .main-content-wrapper--home
     .main-content-wrapper--baralho
 
----
-🧩 Scripts
-app.js → baralho de notas
-app_acordes.js → baralho de acordes
-guard.js → controle de navegação
----
-📌 Estado atual
-✔ Estrutura modular implementada  
-✔ Layout compartilhado centralizado  
-✔ Componentes reutilizáveis definidos  
+------------------------------------------------------------------------
+
+## 🧩 Scripts
+
+-   app.js → baralho de notas
+-   app_acordes.js → baralho de acordes
+-   guard.js → controle de navegação
+
+------------------------------------------------------------------------
+
+## 📌 Estado atual
+
+✔ Estrutura modular implementada\
+✔ Layout compartilhado centralizado\
+✔ Componentes reutilizáveis definidos\
 ⚠ Ajustes visuais ainda em andamento
----
-🛠️ Próximos passos
-Ajustar alinhamento visual
-Padronizar nomes
-Melhorar responsividade
-Limpar código não utilizado
----
-👨‍💻 Autor
+
+------------------------------------------------------------------------
+
+## 🛠️ Próximos passos
+
+-   Ajustar alinhamento visual
+-   Padronizar nomes
+-   Melhorar responsividade
+-   Limpar código não utilizado
+
+------------------------------------------------------------------------
+
+## 👨‍💻 Autor
+
 Anderson Medeiros
----
-📄 Licença
+
+------------------------------------------------------------------------
+
+## 📄 Licença
+
 Projeto para fins educacionais.
