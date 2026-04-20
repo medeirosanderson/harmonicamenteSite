@@ -1,40 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="pt-BR">
+
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="styles/base/reset.css">
     <link rel="stylesheet" href="styles/base/typography.css">
     <link rel="stylesheet" href="styles/base/variables.css">
+    <link rel="stylesheet" href="styles/layout/app-shell.css">
     <link rel="stylesheet" href="styles/components/buttons.css">
-    <link rel="stylesheet" href="styles/pages/home.css">
+    <link rel="stylesheet" href="styles/pages/baralho.css">
+
     <title>Baralho Musical</title>
-</head>
-<body>
+    </head>
+
+    <body>
     <img src="./styles/img/logo.png" alt="Logo Harmonica" class="logo-flutuante">
-    
-    <div class="main-content-wrapper">
+
+    <div class="main-content-wrapper main-content-wrapper--baralho">
         <main class="caderno-container">
-            <div class="button-container">
-                    <a id="select" type="button">COMO JOGAR</a>
-                    <a href="baralhonotas.html">BARALHO DE NOTAS</a>
-                    <a href="baralhoharmonico.html">BARALHO DE ACORDES</a>
-                    <a href="index.html">VOLTAR</a>
-            </div>
+        <div class="button-container">
+            <a id="select" type="button">COMO JOGAR</a>
+            <a href="baralhonotas.html">BARALHO DE NOTAS</a>
+            <a href="baralhoharmonico.html">BARALHO DE ACORDES</a>
+            <a href="index.html">VOLTAR</a>
+        </div>
         </main>
 
-        <div class="texto-container">
-            <p>
-                O <strong>Baralho Musical</strong> é um jogo de cartas que gera 
-                elementos musicais aleatórios para você treinar identificação
-                e reconhecimento, junto com seu professor ou sozinho. 
-
-                Cada baralho possui três níveis:
-                <strong>iniciante, médio</strong> e <strong>avançado</strong>, 
-                e a dificuldade aumenta conforme o nível escolhido. 
-                Simples, rápido e divertido para praticar música de um jeito diferente!
-            </p>
+        <div class="texto-container texto-container--baralho">
+        <p>
+            O <strong>Baralho Musical</strong> é um jogo de cartas que gera
+            elementos musicais aleatórios para você treinar identificação
+            e reconhecimento, junto com seu professor ou sozinho.
+            Cada baralho possui três níveis:
+            <strong>iniciante, médio</strong> e <strong>avançado</strong>,
+            e a dificuldade aumenta conforme o nível escolhido.
+            Simples, rápido e divertido para praticar música de um jeito diferente!
+        </p>
         </div>
     </div>
-</body>
+
+    <script src="./scripts/guard.js"></script>
+    </body>
+
 </html>
